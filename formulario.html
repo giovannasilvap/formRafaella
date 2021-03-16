@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="PT-br">
 <head>
+
+     <!-- Metadados -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
     <title>Cadastro</title>
 </head>
 <body>
-    
+    <!-- Cabeçalho com título e sub (ambos id "título")-->
     <div>
         <h1>Cadastro de Devs</h1>
         <p>Complete suas informações</p>
     <br>
     </div>
-
+    <!-- Ínicio formulário-->
     <form>
         <fieldset>
+            <!-- Campo do nome com legenda "nome" e css de classe "campo"-->
             <div>
                 <label>Nome</label>
                 <input type="text" name="nome" id="nome">
             </div>
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo"-->
             <div>
                 <label>Sobrenome</label>
                 <input type="text" name="sobrenome" id="sobrenome">
             </div>
         </fieldset>
-
+        <!-- Campo de email com legenda "email" e css de classe "campo"-->
         <div>
             <label>Email</label>
             <input type="email" name="email" id="email">
         </div>
-
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo"-->
         <div>
             <label>De qual lado da aplicação você desenvolve?</label>
             <label>
@@ -43,7 +48,7 @@
                 <input type="radio" name="devweb" value="fullstack">Fullstack
             </label>
         </div>
-
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo"-->
         <div>
             <label>Senioridade</label>
             <select id="senioridade">
@@ -55,6 +60,7 @@
         </div>
 
         <fieldset>
+            <!-- Campo de tecnologias para escolhe de 1 ou mais opções para marcar (checkbox) e css de classe "campo"-->
             <div>
                 <label>Seleciona as tecnologias que utiliza</label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
@@ -73,13 +79,13 @@
                 <label for="tecnologia7">JAVA</label>
             </div>
         </fieldset>
-
+        <!-- Caixa de texto-->
         <div>
             <br>
             <label>Conte um pouco da sua experiência</label>
             <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
         </div>
-
+        <!-- Botão para enviar o formulário -->
         <button type="submit">Concluído</button>
 
     </form>
