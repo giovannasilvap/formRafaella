@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#titulo {
+    font-family: sans-serif;
+    color: #BABECC;
+    text-shadow: 1px 1px 1px  #FFF;
+    margin-left: 7%;
+
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: #BABECC;
+    text-shadow: 1px 1px 1px  #FFF;
+    margin-left: 10%;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #EBECF0;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #a4a5a8;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+    border: 10em;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color:  #a4a5a8;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.5em;
+    border: none;
+    background: #EBECF0;
+    box-shadow: inset 5px 5px 6px #BABECC, inset -4px -4px 5px #FFF;
+    outline: none;
+    display: block;
+    border-radius: 14px;
+
+}
+
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #EBECF0;
+    box-shadow: inset 1px 1px 2px #BABECC, inset -2px -2px 3px #FFF;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    border-radius: 14px;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.3em 0.6em;
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
+#tecnologia1 {
+    background-color: red;
+}
