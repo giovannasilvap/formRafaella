@@ -6,38 +6,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
     <!-- Título da página -->
     <title>Cadastro</title>
 </head>
 <body>
     <!-- Cabeçalho com título e sub (ambos id "título")-->
     <div>
-        <h1>Cadastro de Devs</h1>
-        <p>Complete suas informações</p>
+        <h1 id="titulo">Cadastro de Devs</h1>
+        <p id="subtitulo">Complete suas informações</p>
     <br>
     </div>
     <!-- Ínicio formulário-->
     <form>
-        <fieldset>
+
+
+        <fieldset class="grupo">
             <!-- Campo do nome com legenda "nome" e css de classe "campo"-->
-            <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
+
             <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo"-->
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
+
         <!-- Campo de email com legenda "email" e css de classe "campo"-->
-        <div>
-            <label>Email</label>
-            <input type="email" name="email" id="email">
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
         </div>
+
         <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo"-->
-        <div>
-            <label>De qual lado da aplicação você desenvolve?</label>
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
             <label>
                 <input type="radio" name="devweb" value="frontend">Front-end
             </label>
@@ -48,9 +56,10 @@
                 <input type="radio" name="devweb" value="fullstack">Fullstack
             </label>
         </div>
+
         <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo"-->
-        <div>
-            <label>Senioridade</label>
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
             <select id="senioridade">
                 <option selected disabled value="">Selecione</option>
                 <option>Junior</option>
@@ -59,10 +68,10 @@
             </select>
         </div>
 
-        <fieldset>
+        <fieldset class="grupo">
             <!-- Campo de tecnologias para escolhe de 1 ou mais opções para marcar (checkbox) e css de classe "campo"-->
             <div>
-                <label>Seleciona as tecnologias que utiliza</label><br><br>
+                <label><strong>Seleciona as tecnologias que utiliza</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnolgia1">HTML</label>
                 <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
@@ -80,13 +89,14 @@
             </div>
         </fieldset>
         <!-- Caixa de texto-->
-        <div>
+
+        <div class="campo">
             <br>
-            <label>Conte um pouco da sua experiência</label>
+            <label for="experiencia"><strong>Conte um pouco da sua experiência</strong></label>
             <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
         </div>
         <!-- Botão para enviar o formulário -->
-        <button type="submit">Concluído</button>
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
 
     </form>
 </body>
